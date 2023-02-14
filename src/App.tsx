@@ -20,12 +20,12 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="flex flex-col gap-2">
       <header>
         <a href="https://reactjs.org" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
-          <h1>React Todo</h1>
         </a>
+        <h1 className="text-6xl text-blue-500">React Todo</h1>
       </header>
       {tasks.length > 0 ? (
         <ul>

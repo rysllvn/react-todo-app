@@ -46,7 +46,7 @@ export default function NewTaskForm({ onNewTask }: Props) {
   return (
     <>
       {open ? (
-        <div>
+        <div className="flex flex-col items-center border max-w-md">
           <input
             type="text"
             placeholder="Task name"
@@ -69,7 +69,12 @@ export default function NewTaskForm({ onNewTask }: Props) {
           <button onClick={handleConfirm}>Confirm</button>
         </div>
       ) : (
-        <button onClick={handleAddTask}>Add Task</button>
+        <button
+          className="border border-indigo-600 p-3 rounded w-fit"
+          onClick={handleAddTask}
+        >
+          Add Task
+        </button>
       )}
     </>
   );
